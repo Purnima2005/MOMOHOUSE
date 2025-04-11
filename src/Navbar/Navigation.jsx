@@ -46,10 +46,8 @@ function Navigation() {
           <button
             onClick={() => {
               logout();
-            }}
-            className="    font-Roboto  mb-2"
-          >
-            Logout
+            }}>
+            logout
           </button>
         ) : (
           <NavLink to="/login">Login</NavLink>
