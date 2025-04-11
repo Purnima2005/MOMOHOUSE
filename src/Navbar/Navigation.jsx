@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-
+import {Momologo} from "../assets/Home/MomoLogo.png";
 
 import { BsCart4 } from "react-icons/bs";
 import { useContext } from "react";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import OneBg from "../assets/Home/OneBg.png";
-import Momo from "../assets/Home/Momo.png";
+import MoMo from "../assets/Home/MoMo.png";
 import Circle from "../assets/Home/Circle.png";
 import Women from "../assets/Home/Women.png";
 import { NavLink } from "react-router-dom";
@@ -76,7 +76,7 @@ function Home() {
           </div>
         </div>
         <div className=" overflow-hidden relative w-96 flex justify-end ">
-          <img className="h-52 top-14 left-8 absolute" src={Momo} alt="Momo " />
+          <img className="h-52 top-14 left-8 absolute" src={MoMo} alt="Momo " />
           <img className="h-96 -mt-5 " src={Circle} alt="circle" />
         </div>
       </div>
