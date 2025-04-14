@@ -8,6 +8,7 @@ import Rose from "../assets/Home/Rose.png"
 import Three from "../assets/Home/Three.png"
 import Quote from "../assets/Home/Quote.png";
 import Making from "../assets/Home/Making.png";
+
 function About() {
   return (
     <div>
