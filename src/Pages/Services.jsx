@@ -4,7 +4,6 @@ import Party from "../assets/Home/Party.png";
 import QR from "../assets/Home/QR.png";
 import Group from "../assets/Home/Group.png";
 import Cap from "../assets/Home/Cap.png";
-import { NavLink } from "react-router-dom";
 import NavigateToContact from "../Components/NavigateToContact";
 
 const Services = () => {
@@ -71,4 +70,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;
