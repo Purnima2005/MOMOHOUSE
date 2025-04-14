@@ -22,13 +22,13 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/allergyAdvice" element={<AllergyAdvice />} />
-        <Route path="/menu" element={<ProtectedRoutes components={<Menu/>} />}/>
+        <Route path="/menu" element={<Menu/>} />
         <Route path="/about" element={<About />} />
-        <Route path="/cartPage" element={<CartPage />} />
-        <Route path="/payment" element={<Payment />} />
+        <Route path="/cartPage" element={<ProtectedRoutes components={<CartPage/>} />}/>
+        <Route path="/payment" element={<ProtectedRoutes components={<Payment/>} />}/>
         <Route path="/success" element={<Success />} />
         <Route path="/failure" element={<Failure />} />
         <Route path="/login" element={<Login/>} />

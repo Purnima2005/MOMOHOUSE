@@ -4,13 +4,22 @@ import MoMo from "../assets/Home/MoMo.png";
 import Circle from "../assets/Home/Circle.png";
 import Women from "../assets/Home/Women.png";
 import { NavLink } from "react-router-dom";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { BsArrowRightShort } from "react-icons/bs";
 import Man from "../assets/Home/Man.png";
 import NavigateToMenu from "../Components/NavigateToMenu";
 import Nice from "../assets/Home/Nice.png";
 import Cap from "../assets/Home/Cap.png";
 import Party from "../assets/Home/Party.png";
 import Cook from "../assets/Home/Cook.png";
+import NavigateToService from "../Components/NavigateToService";
+import NavigateToAbout from "../Components/NavigateToAbout";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+
 
 function Home() {
   const [recipes, setrecipes] = useState([]);
@@ -71,20 +80,20 @@ function Home() {
               to="/menu"
             >
               {" "}
-              <span>Explore Food Menu </span> <IoIosArrowRoundForward />
+              <span>Explore Food Menu </span> <BsArrowRightShort />
             </NavLink>
           </div>
         </div>
         <div className=" overflow-hidden relative w-96 flex justify-end ">
-          <img className="h-52 top-14 left-8 absolute" src={MoMo} alt="Momo " />
-          <img className="h-96 -mt-5 " src={Circle} alt="circle" />
+          <img className="h-52 top-40 left-8 absolute" src={MoMo} alt="Momo " />
+          <img className="h-96 mt-20 " src={Circle} alt="circle" />
         </div>
       </div>
       <div className="  flex ">
-        <div className=" mt-10  ml-10">
+        <div className=" mt-20  ml-10">
           <img src={Man} className="  w-80 h-96  ml-40 " />
         </div>{" "}
-        <div className="w-[50%]   ml-40">
+        <div className="w-[50%] mt-35  ml-40">
           <h1 className="text-[39px] flex">
             {" "}
             Why Customers{" "}
@@ -100,18 +109,10 @@ function Home() {
             Ipsum saepe unde qui? Dolore quidem voluptatibus culpa dolor
             aspernatur necessitatibus odit inventore. Nulla?
           </p>
-          <div className=" mt-5">
-            <NavLink
-              className=" bg-[#0C6967] p-4 rounded-3xl text-white flex justify-center items-center w-60 gap-2 "
-              to="/menu"
-            >
-              {" "}
-              <span>Explore Our Story </span> <IoIosArrowRoundForward />
-            </NavLink>
-          </div>
+         <NavigateToAbout/>
         </div>
       </div>
-      <div className="  text-center ">
+      <div className="  text-center mt-30">
         <div>
           <h1 className=" text-[39px]">
             Our <span className="text-orange-700 text-20   ">Most love </span>{" "}
@@ -134,21 +135,21 @@ function Home() {
           </button>
           <button
             onClick={() => {
-              filterRecipes("Indian");
+              filterRecipes("Korean");
             }}
             className=" border-1 rounded-2xl   hover:bg-gray-200 p-1 w-24 "
           >
             {" "}
-            Indian
+            Korean
           </button>
           <button
             onClick={() => {
-              filterRecipes("Korean");
+              filterRecipes("Indian");
             }}
             className=" border-1 rounded-2xl  hover:bg-gray-200  p-1 w-24"
           >
             {" "}
-            Korean
+            Indian
           </button>
           <div className=" ">
             <div>
@@ -206,7 +207,7 @@ function Home() {
         <br></br>
 
         <div className=" ">
-          <div className=" flex justify-center ">
+          <div className=" flex justify-center mt-25">
             {" "}
             <h1 className="text-3xl  font-bold text-black-800 ">
               {" "}
@@ -214,11 +215,11 @@ function Home() {
               Service They Want{" "}
             </h1>
           </div>
-          <img className="inline-block w- autofill: mt-2" src={Cook} />
+          <img className="inline-block w- autofill: mt-10" src={Cook} />
           <br></br>
           <br /> <br />
           <div className="  flex justify-center items-center gap-10">
-            <div className="  w- h-40  p- 40 ">
+            <div className=" h-40  p- 40 ">
               <img src={Nice} className=" ml-51 flex mt-4 " />
               <h1 className=" font-bold">Quality Food</h1>
               <p className=" mt-3 items-center">
@@ -226,14 +227,14 @@ function Home() {
                 ingrdients
               </p>
             </div>
-            <div className="  w- h-40  p- 40 ">
+            <div className="h-40  p- 40 ">
               <img src={Party} className=" ml-45  mt-4 flex " />
               <h1 className=" font-bold"> Private Party</h1>
               <p className=" mt-3">
                 Get the best food for all your private parties and gathering
               </p>
             </div>
-            <div className="  w- h-40  p- 40 ">
+            <div className="h-40  p- 40 ">
               <img src={Cap} className=" ml-35  mt-4 flex" />
               <h1 className=" font-bold "> Catering</h1>
               <p className=" mt-3">
@@ -243,7 +244,7 @@ function Home() {
           </div>
           <br />
           <div className=" flex justify-center">
-            <NavigateToMenu />
+            <NavigateToService />
           </div>
         </div>
         <div className=" flex items-center mt-10  pl-10">
@@ -265,94 +266,151 @@ function Home() {
             <div className="h-[15%] pt-32 flex items-center justify-end rounded-md ">
               <img
                 src={Women}
-                className=" border-2  border-red-500 w-80 h-96 mb-10"
+                className=" w-80 h-96 mb-10"
               />
             </div>
           </div>
         </div>
-
-        <div className=" border-2 border-black grid  ">
-          <form>
-            <div className="  ">
-              <div>
-                <label htmlFor=" FirstName">First Name</label>
-                <input
-                  type="text"
-                  id="FirstName"
-                  name="FirstName"
-                  placeholder="Enter Your Name"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="LastName">Last Name </label>
-                <input
-                  type="text"
-                  id="LastName"
-                  name="LastName"
-                  placeholder="Enter YourLastName"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="Email">Email </label>
-                <input
-                  type="email"
-                  id="Email"
-                  name="Email"
-                  placeholder="Enter Your Email"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block mb-1" htmlFor="purpose">
-                  What Can We Do For You?
-                </label>
-                <input
-                  type="text"
-                  id="purpose"
-                  name="purpose"
-                  placeholder="Enter your purpose"
-                />
-              </div>
-              <div>
-                <label className="block mb-1" htmlFor="phone">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Enter your phone number"
-                />
-              </div>
-              <div>
-                <label className="block  mb-1" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Enter your message"
-                  className="w-full h-24 p-2 border-2 border-teal-800 rounded"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <button
-                className="bg-orange-500 mt-5 hover:bg-orange-600 p-4
-             flex items-center gap-x-2   text-white rounded-full"
-              >
-                {" "}
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
+        
         <div>
+        <div className="flex flex-col justify-center items-center mt-20 mb-4">
+          <h1 className="text-2xl font-bold"><span className="text-orange-600">Get</span> In Touch</h1>
+          <p className="text-teal-800  text-xl font-bold mt-2 mb-4">Our Friendly team would love to hear from you</p>
+
+        </div>
+        <div className=" flex h-[550px] px-40 mr-50" >
+          <div className=" bg-teal-800 text-white p-6 rounded-xl w-72 h-[560px] text-left max-w-md mx-auto space-y-6">
+            <div>
+              <h3 className="flex items-center gap-2 text-lg font-semibold">
+              <FaMapMarkerAlt /> Our Address
+              </h3>
+              <p className="italic text-sm mt-4">New Baneshwor, Kathmandu, Bagmati,<br /> Nepal</p>
+            </div>
+            <div>
+              <h3 className="flex items-center gap-2 text-lg font-semibold">
+                <FaPhone /> Our Contacts
+              </h3>
+              <div className="text-sm flex mt-4">
+                <p><strong>Mobile:</strong> <br /> 980 5689789 <br /> 9841 275897</p>
+                <p><strong className="ml-10"> Landline:</strong> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;01-4783972</p>
+                </div>
+            </div>
+            <div>
+              <h3 className="flex items-center gap-2 text-lg font-semibold">
+                <FaClock /> Our Service Time
+              </h3>
+              <div className="text-sm flex mt-4">
+                <p><strong>MON - FRI:</strong>  <br />10 am - 8 pm</p>
+                <p><strong className="ml-10">SAT - SUN:</strong><p className="ml-10"> Closed</p> </p>
+              </div>
+            </div>
+            <div className="text-left ">
+              <p className="italic items-center justify-center text-sm mt-16">Get in touch in social networks</p>
+              <div className="flex gap-4 mt-4 text-xl">
+                <FaFacebook className="cursor-pointer hover:text-gray-300" />
+                <FaInstagram className="cursor-pointer hover:text-gray-300" />
+                <FaTiktok className="cursor-pointer hover:text-gray-300" />
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <form className="ml-5 mt-5 text-left">
+              <div className="flex gap-10 ">
+                <div>
+                  <label className="block  mb-1 " htmlFor="firstName">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter your first name"
+                    className=" p-2 border-2 border-teal-800 rounded w-35"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block  mb-1" htmlFor="lastName">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter your last name"
+                    className=" p-2 border-2 border-teal-800 rounded w-35"
+                    required
+                    />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block mb-1" htmlFor="purpose">
+                      What Can We Do For You?
+                    </label>
+                    <input
+                      type="text"
+                      id="purpose"
+                      name="purpose"
+                      placeholder="Enter your purpose"
+                      className=" w-full p-2 border-2 border-teal-800 rounded"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block mb-1" htmlFor="email">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      className="w-full p-2 border-2 border-teal-800 rounded"
+                      required
+                      />
+                      </div>
+
+                      <div>
+                        <label className="block mb-1" htmlFor="phone">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          placeholder="Enter your phone number"
+                          className="w-full p-2 border-2 border-teal-800 rounded"
+                        />
+                      </div>
+        
+                      <div>
+                        <label className="block  mb-1" htmlFor="message">
+                          Message
+                        </label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Enter your message"
+                          className="w-full h-24 p-2 border-2 border-teal-800 rounded"
+                          rows="4"
+                          required
+                        ></textarea>
+                        </div>
+
+
+              <button className="bg-orange-500 mt-5 hover:bg-orange-600 p-4
+             flex items-center gap-x-2   text-white rounded-full"> Send Message</button>
+
+            </form>
+          </div>
+          </div>
+          </div>
+
+        <div className="mt-30">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8268.267322590047!2d85.32809763592358!3d27.662726918927284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1743050647548!5m2!1sen!2snp"
-            width={"1250"}
+            width={"1584"}
             height={"450"}
             allowFullScreen=""
             loading="lazy"
