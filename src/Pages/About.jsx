@@ -127,7 +127,7 @@ function About() {
         <p className="text-teal-800 text-2xl font-semibold pb-4">
           Our talented members who delivers only the best results
         </p>
-        <div className="flex flex-row border gap-4">
+        <div className="flex flex-row gap-4">
           <img src={Three} />
         </div>
       </div>
