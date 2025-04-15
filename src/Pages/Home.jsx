@@ -109,7 +109,7 @@ function Home() {
             Ipsum saepe unde qui? Dolore quidem voluptatibus culpa dolor
             aspernatur necessitatibus odit inventore. Nulla?
           </p>
-         <NavigateToAbout/>
+          <NavigateToAbout />
         </div>
       </div>
       <div className="  text-center mt-30">
@@ -271,141 +271,141 @@ function Home() {
             </div>
           </div>
         </div>
-        
+
         <div>
-        <div className="flex flex-col justify-center items-center mt-20 mb-4">
-          <h1 className="text-2xl font-bold"><span className="text-orange-600">Get</span> In Touch</h1>
-          <p className="text-teal-800  text-xl font-bold mt-2 mb-4">Our Friendly team would love to hear from you</p>
+          <div className="flex flex-col justify-center items-center mt-20 mb-4">
+            <h1 className="text-2xl font-bold"><span className="text-orange-600">Get</span> In Touch</h1>
+            <p className="text-teal-800  text-xl font-bold mt-2 mb-4">Our Friendly team would love to hear from you</p>
 
-        </div>
-        <div className=" flex h-[550px] px-40 mr-50" >
-          <div className=" bg-teal-800 text-white p-6 rounded-xl w-72 h-[560px] text-left max-w-md mx-auto space-y-6">
-            <div>
-              <h3 className="flex items-center gap-2 text-lg font-semibold">
-              <FaMapMarkerAlt /> Our Address
-              </h3>
-              <p className="italic text-sm mt-4">New Baneshwor, Kathmandu, Bagmati,<br /> Nepal</p>
-            </div>
-            <div>
-              <h3 className="flex items-center gap-2 text-lg font-semibold">
-                <FaPhone /> Our Contacts
-              </h3>
-              <div className="text-sm flex mt-4">
-                <p><strong>Mobile:</strong> <br /> 980 5689789 <br /> 9841 275897</p>
-                <p><strong className="ml-10"> Landline:</strong> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;01-4783972</p>
-                </div>
-            </div>
-            <div>
-              <h3 className="flex items-center gap-2 text-lg font-semibold">
-                <FaClock /> Our Service Time
-              </h3>
-              <div className="text-sm flex mt-4">
-                <p><strong>MON - FRI:</strong>  <br />10 am - 8 pm</p>
-                <p><strong className="ml-10">SAT - SUN:</strong><p className="ml-10"> Closed</p> </p>
-              </div>
-            </div>
-            <div className="text-left ">
-              <p className="italic items-center justify-center text-sm mt-16">Get in touch in social networks</p>
-              <div className="flex gap-4 mt-4 text-xl">
-                <FaFacebook className="cursor-pointer hover:text-gray-300" />
-                <FaInstagram className="cursor-pointer hover:text-gray-300" />
-                <FaTiktok className="cursor-pointer hover:text-gray-300" />
-              </div>
-            </div>
           </div>
-          <div className="">
-            <form className="ml-5 mt-5 text-left">
-              <div className="flex gap-10 ">
-                <div>
-                  <label className="block  mb-1 " htmlFor="firstName">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="Enter your first name"
-                    className=" p-2 border-2 border-teal-800 rounded w-35"
-                    required
-                  />
+          <div className=" flex h-[550px] px-40 mr-50" >
+            <div className=" bg-teal-800 text-white p-6 rounded-xl w-72 h-[560px] text-left max-w-md mx-auto space-y-6">
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold">
+                  <FaMapMarkerAlt /> Our Address
+                </h3>
+                <p className="italic text-sm mt-4">New Baneshwor, Kathmandu, Bagmati,<br /> Nepal</p>
+              </div>
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold">
+                  <FaPhone /> Our Contacts
+                </h3>
+                <div className="text-sm flex mt-4">
+                  <p><strong>Mobile:</strong> <br /> 980 5689789 <br /> 9841 275897</p>
+                  <p><strong className="ml-10"> Landline:</strong> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;01-4783972</p>
                 </div>
-                <div>
-                  <label className="block  mb-1" htmlFor="lastName">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Enter your last name"
-                    className=" p-2 border-2 border-teal-800 rounded w-35"
-                    required
-                    />
-                    </div>
-                  </div>
-
+              </div>
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold">
+                  <FaClock /> Our Service Time
+                </h3>
+                <div className="text-sm flex mt-4">
+                  <p><strong>MON - FRI:</strong>  <br />10 am - 8 pm</p>
+                  <p><strong className="ml-10">SAT - SUN:</strong><p className="ml-10"> Closed</p> </p>
+                </div>
+              </div>
+              <div className="text-left ">
+                <p className="italic items-center justify-center text-sm mt-16">Get in touch in social networks</p>
+                <div className="flex gap-4 mt-4 text-xl">
+                  <FaFacebook className="cursor-pointer hover:text-gray-300" />
+                  <FaInstagram className="cursor-pointer hover:text-gray-300" />
+                  <FaTiktok className="cursor-pointer hover:text-gray-300" />
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <form className="ml-5 mt-5 text-left">
+                <div className="flex gap-10 ">
                   <div>
-                    <label className="block mb-1" htmlFor="purpose">
-                      What Can We Do For You?
+                    <label className="block  mb-1 " htmlFor="firstName">
+                      First Name
                     </label>
                     <input
                       type="text"
-                      id="purpose"
-                      name="purpose"
-                      placeholder="Enter your purpose"
-                      className=" w-full p-2 border-2 border-teal-800 rounded"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Enter your first name"
+                      className=" p-2 border-2 border-teal-800 rounded w-35"
+                      required
                     />
                   </div>
-
                   <div>
-                    <label className="block mb-1" htmlFor="email">
-                      Email
+                    <label className="block  mb-1" htmlFor="lastName">
+                      Last Name
                     </label>
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      className="w-full p-2 border-2 border-teal-800 rounded"
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Enter your last name"
+                      className=" p-2 border-2 border-teal-800 rounded w-35"
                       required
-                      />
-                      </div>
+                    />
+                  </div>
+                </div>
 
-                      <div>
-                        <label className="block mb-1" htmlFor="phone">
-                          Phone Number
-                        </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          placeholder="Enter your phone number"
-                          className="w-full p-2 border-2 border-teal-800 rounded"
-                        />
-                      </div>
-        
-                      <div>
-                        <label className="block  mb-1" htmlFor="message">
-                          Message
-                        </label>
-                        <textarea
-                          id="message"
-                          name="message"
-                          placeholder="Enter your message"
-                          className="w-full h-24 p-2 border-2 border-teal-800 rounded"
-                          rows="4"
-                          required
-                        ></textarea>
-                        </div>
+                <div>
+                  <label className="block mb-1" htmlFor="purpose">
+                    What Can We Do For You?
+                  </label>
+                  <input
+                    type="text"
+                    id="purpose"
+                    name="purpose"
+                    placeholder="Enter your purpose"
+                    className=" w-full p-2 border-2 border-teal-800 rounded"
+                  />
+                </div>
+
+                <div>
+                  <label className="block mb-1" htmlFor="email">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    className="w-full p-2 border-2 border-teal-800 rounded"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block mb-1" htmlFor="phone">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    className="w-full p-2 border-2 border-teal-800 rounded"
+                  />
+                </div>
+
+                <div>
+                  <label className="block  mb-1" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter your message"
+                    className="w-full h-24 p-2 border-2 border-teal-800 rounded"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
 
 
-              <button className="bg-orange-500 mt-5 hover:bg-orange-600 p-4
+                <button className="bg-orange-500 mt-5 hover:bg-orange-600 p-4
              flex items-center gap-x-2   text-white rounded-full"> Send Message</button>
 
-            </form>
+              </form>
+            </div>
           </div>
-          </div>
-          </div>
+        </div>
 
         <div className="mt-30">
           <iframe

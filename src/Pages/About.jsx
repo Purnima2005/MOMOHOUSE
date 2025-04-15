@@ -4,8 +4,8 @@ import Plate from "../assets/Home/Plate.png";
 import Annyeong from "../assets/Home/Annyeong.png";
 import Fried from "../assets/Home/Fried.png";
 import Ann from "../assets/Home/Ann.png";
-import Rose from "../assets/Home/Rose.png"
-import Three from "../assets/Home/Three.png"
+import Rose from "../assets/Home/Rose.png";
+import Three from "../assets/Home/Three.png";
 import Quote from "../assets/Home/Quote.png";
 import Making from "../assets/Home/Making.png";
 

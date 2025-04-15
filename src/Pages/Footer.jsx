@@ -5,7 +5,7 @@ import { FaTiktok } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaSquareYoutube } from "react-icons/fa6";
-import Momologo from '../assets/Home/Momologo.png'
+import Momologo from "../assets/Home/Momologo.png";
 
 function Footer() {
   return (
