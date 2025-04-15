@@ -1,4 +1,4 @@
-import Chef from "../assets/Home/Chef.png";
+import Ww from "../assets/Home/Ww.png";
 import Cooking from "../assets/Home/Cooking.png";
 import Plate from "../assets/Home/Plate.png";
 import Annyeong from "../assets/Home/Annyeong.png";
@@ -30,7 +30,7 @@ function About() {
         </div>
         <div className="flex items-center">
           <div className="h-[20%] pt-32 flex items-center justify-end">
-            <img src={Chef} />
+            <img src={Ww} />
           </div>
         </div>
       </div>
