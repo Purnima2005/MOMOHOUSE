@@ -8,8 +8,8 @@ createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <CartProvider>
     <Auth0Provider
-    domain="dev-5szasftzxfifqesq.us.auth0.com"
-    clientId="00cIlOQpYcdU5y1X8YWDgFq2CbOxShGz"
+    domain="dev-rdyz2wwh41w6fwuh.us.auth0.com"
+    clientId="BSYj8FoTIhpVWZAqkTRwjamdg7Xfakgy"
     authorizationParams={{
       redirect_uri: window.location.origin
     }}
