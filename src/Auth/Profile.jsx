@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 
 function Profile() {
-  const { user,logout , isAuthenticated, isLoading } = useAuth0();
+  const { user,Logout , isAuthenticated, isLoading } = useAuth0();
   console.log(user);
 
   return (
@@ -20,7 +20,7 @@ function Profile() {
 
           <button
           onClick={()=>{
-            logout()
+            Logout()
           }}
           
           className="bg-black text-white p-2  w-28 rounded-sm">
