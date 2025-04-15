@@ -40,7 +40,7 @@ function About() {
       </div>
 
       <div className="flex  mt-20 ml-65 gap-40">
-        <div>
+        <div className="mt-5">
           <p className="text-2xl font-bold mb-10">
             Our momos are
             <span className="text-orange-600">
@@ -73,7 +73,7 @@ function About() {
           <img src={Annyeong} />
           <img src={Fried} className="h-40 relative bottom-24  left-[75%]  " />
         </div>
-        <div className="flex-item-end ">
+        <div className="flex-item-end mt-5">
           <p className="text-2xl relative -top-3 font-bold ">
             Taste the difference with <br />
             <span className="text-orange-600"> our handcrafted momos</span>
@@ -87,8 +87,8 @@ function About() {
         </div>
       </div>
 
-      <div className="flex  ml-65  gap-40">
-        <div>
+      <div className="flex  ml-65  gap-40 mt-20">
+        <div className="mt-5">
           <p className="text-2xl h-[40%]  font-bold ">
             Our momos are the
             <br /> perfect
